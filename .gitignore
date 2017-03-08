@@ -2,6 +2,7 @@
 
 .idea
 JavaTraining.iml
+out
 
 .settings
 .classpath
