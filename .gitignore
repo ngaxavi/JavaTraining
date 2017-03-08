@@ -1,6 +1,7 @@
 *.class
 
 .idea
+JavaTraining.iml
 
 .settings
 .classpath

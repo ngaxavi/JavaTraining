@@ -22,8 +22,7 @@ Ein Beispielablauf könnte sein:
 
 Schreiben Sie ein Java-Programm, das vom Nutzer die Zahlen <i><b>wholePart1,
 numerator1, denominator1, wholePart2, numerator2 </b></i>und <i><b>denominator2</b></i> abfragt und
-dann die Brüche sowie das Ergebnis der Addition in der folgenden Form am Bildschirm aus-
-gibt.
+dann die Brüche sowie das Ergebnis der Addition in der folgenden Form am Bildschirm ausgibt.
 Dabei sollen weder das Zwischen- noch das Endergebnis gekürzt werden.
 
 ```
@@ -33,7 +32,7 @@ Dabei sollen weder das Zwischen- noch das Endergebnis gekürzt werden.
   Ganzzahl2 eingeben: 1
   Zaehler2 eingeben: 2
   Nenner2 eingeben: 3
-  1 + 1/2 + 1 + 2/3 = 2 + 7/6 = 19/6
+  1  1/2 + 1 2/3 = 2  7/6 = 19/6
 ```
 
 <br/>
