@@ -1,120 +1,80 @@
-# Übungsblatt 3
+# Übungsblatt 4
 
 
-###### <u>Übung 1:</u> Numbers0to9.java
-Schreiben Sie ein Java-Programm, das vom Nutzer die gewünschte Zeilenzahl abfragt und dann in der ersten Zeile eine 1, in der zweiten Zeile zwei 2en etc. ausgibt.
-Dabei soll jeweils nur die letzte Ziffer der Zeilennummer erscheinen, also statt zehn 10en nur
-zehn 0en etc. Beispiel:
-
+###### <u>Übung 1:</u> WriteReadNumbers.java
+Schreiben Sie ein Java-Programm, das 20 Zufallszahlen zwischen 0 und
+9 in eine Datei namens <b>20numbers.txt</b> schreibt. In der Datei soll je eine Zahl pro Zeile stehen.
+Zusätzlich soll das Programm die Summe der geschriebenen Zahlen am Bildschirm ausgeben.
+Danach werden die vorher geschriebenen 20 Zufallszahlen aus der Datei 20numbers.txt gelesen und die Summe der gelesenen Zahlen am Bildschirm
+ausgibt. Setzen sie Methoden ein. z.B:
 ```$xslt
-    Anzahl Zeilen: 12
-    1
-    22
-    333
-    4444
-    55555
-    666666
-    7777777
-    88888888
-    999999999
-    0000000000
-    11111111111
-    222222222222
-```
-<br/>
-
-###### <u>Übung 2:</u> Factoring.java
-Schreiben Sie ein Java-Programm, das vom Nutzer eine Zahl abfragt und
-dann die zugehörige Primzahlzerlegung ausgibt. Achten Sie darauf, dass am Anfang/Ende der
-Ausgabe keine zusätzlichen * -Zeichen stehen dürfen. Beispiele:
-
-```$xslt
-    Zahl eingeben: 24
-    24 = 2 * 2 * 2 * 3
-    
-    Zahl eingeben: 50
-    50 = 2 * 5 * 5
-    
-    Zahl eingeben: 29
-    29 = 29
-```
-<br/>
-
-###### <u>Übung 3:</u> Chessboard.java
-Schreiben Sie ein Programm, das vom Nutzer eine Zahl n abfragt und dann gibt es n Zeilen mit je n Zeichen
-’*’ bzw. ’o’ im Schachbrettmuster aus, z.B.
-
-```$xslt
-    n = 8
-    o*o*o*o*
-    *o*o*o*o
-    o*o*o*o*
-    *o*o*o*o
-    o*o*o*o*
-    *o*o*o*o
-    o*o*o*o*
-    *o*o*o*o
+    Kontrollsumme beim Schreiben: 87
+    Kontrollsumme beim Lesen: 87
 ```
 
-Hinweis: Ob die Zeichen exakt untereinander stehen, hängt von der Schriftart ab und ist für die
-Lösung egal.
 
 <br/>
 
-###### <u>Übung 4:</u> BestDistance.java
-Schreiben Sie ein Programm, welches eine ”Basiszahl” vom Nutzer einliest. Anschließend soll das Programm so lange Vergleichszahlen vom Nutzer einlesen,
-bis dieser das Programm durch Eingabe von -1 beendet. Das Programm soll von den eingegebenen Vergleichszahlen die jenige herausfinden, deren Betrag dem Betrag der Basiszahl am
-nächsten liegt und außerdem ausgeben, um die wievielte Vergleichszahl es sich dabei handelt.
-Damit ist auch das Programm beendet.<br/>
-Setzen Sie <b>mindestens eine Methode</b> ein. Sie dürfen davon ausgehen, dass der Nutzer nur sinnvolle Eingaben durchführt.
-Sollte jedoch als erste Vergleichszahl bereits eine -1 eingegeben werden, brechen Sie das Programm mit einer entsprechenden Meldung ab.
+###### <u>Übung 2:</u> Statistics.java
+Schreiben Sie ein Java-Programm, das zur Datei 20numbers.txt eine Statistik erstellt, wie oft welche der Zahlen zwischen 0 und 9 vorkommt. Lösen Sie die Aufgabe
+mit Hilfe eines Arrays der Länge 10 (für die 10 möglichen Zahlen). Beispiel für Programmaufruf:
+```$xslt
+    Statistik:
+    3-mal 0
+    4-mal 1
+    2-mal 2
+    0-mal 3
+    ...
+```
+<br/>
+
+###### <u>Übung 3:</u> WriteAdvanced
+Schreiben Sie ein Programm, dass folgendes leistet:
+<ul>
+<li> in die Datei Zufallszahlen zwischen 1 und 6 geschrieben werden,</li>
+<li> die Datei mehrere Zeilen mit je mehreren Zufallszahlen (durch Leerzeichen getrennt) enthält </li>
+<li> jede Zeile mit der Anzahl der Zufallszahlen in dieser Zeile beginnt, </li>
+<li> die Anzahl der Zufallszahlen für jede Zeile vom Nutzer abgefragt wird,</li>
+<li> das Programm bei der Nutzereingabe -1 abbricht und </li>
+<li> zu jeder Zeile die Summe der geschriebenen Zahlen am Bildschirm angezeigt wird</li>
+</ul>
+Hier ein Beispiel für ein Programmaufruf:
 
 ```$xslt
-    Geben Sie die Basiszahl ein: 12.1
-    Geben Sie eine Zahl ein: -9
-    Geben Sie eine Zahl ein: 6.8
-    Geben Sie eine Zahl ein: -1
-    Die 1. Zahl mit dem Wert -9.0 ist am naechsten dran.
-    
-    Geben Sie die Basiszahl ein: -6.99
-    Geben Sie eine Zahl ein: 7.034
-    Geben Sie eine Zahl ein: -6.66
-    Geben Sie eine Zahl ein: 10.1
-    Geben Sie eine Zahl ein: -1
-    Die 1. Zahl mit dem Wert 7.034 ist am naechsten dran.
-    
-    Geben Sie die Basiszahl ein: 3.33
-    Geben Sie eine Zahl ein: 6.2
-    Geben Sie eine Zahl ein: 1.21
-    Geben Sie eine Zahl ein: -2
-    Geben Sie eine Zahl ein: -1
-    Die 3. Zahl mit dem Wert -2.0 ist am naechsten dran.
-    
-    Geben Sie die Basiszahl ein: 76.6
-    Geben Sie eine Zahl ein: -1
-    Es wurde keine Vergleichszahl angegeben.
+   Anzahl Zufallszahlen  in 1-ter Zeile: 4
+   Kontrollsumme: 19
+   Anzahl Zufallszahlen  in 2-ter Zeile: 7
+   Kontrollsumme: 28
+   Anzahl Zufallszahlen  in 3-ter Zeile: 2
+   Kontrollsumme: 8 
+   Anzahl Zufallszahlen in 4-ter Zeile: -1
+   
+```
+und die dabei erzeugte Datei <b>advancedNumbers.txt</b>
+```$xslt
+    4 6 1 6 6
+    7 4 6 2 6 5 1 4
+    2 2 6
 ```
 
 <br/>
 
-###### <u>Übung 5:</u> Carpets.java
+###### <u>Übung 4:</u> StatisticsAdvanced.java
+Schreiben Sie ein Programm, das folgendes leistet:
 
-Der Preis pro Quadratmeter Teppichboden beträgt 15 Euro falls eine der Seiten kürzer als 2 Meter ist und 10 Euro sonst. Schreiben Sie ein Programm, das vom Nutzer
-wiederholt die Seitenlänge gewünschter rechteckiger Teppichstücke abfragt und als Ergebnis
-den Gesamtpreis ausgibt. Die Längenangaben sollen ganzzahlig sein. Die Abfrage soll abbrechen, sobald der Nutzer bei Länge oder Breite eine 0 eintippt. <b>Verwenden Sie eine Methode</b>,
-um den Preis eines einzelnen Teppichstücks zu berechnen. Der Methode sollen als Parameter
-Länge und Breite des Teppichstücks übergeben werden.
+<ul>
+<li> die Zahlen aus der Datei advancedNumbers.txt mit dem in Aufgabe 3) beschriebenen
+    Format eingelesen werden, </li>
+<li> nach jeder Zeile eine Statistik zu dieser Zeile und </li>
+<li> am Ende eine Gesamtstatistik ausgegeben wird. </li>
+</ul>
+
+Beispiel für Programmaufruf (die 1-te Zeile enthält 1-mal Eins und
+3-mal Sechs etc.):
 
 ```$xslt
-    Nächster Teppich
-    Länge: 4
-    Breite: 6
-    
-    Nächster Teppich
-    Länge: 7
-    Breite: 3
-    
-    Nächster Teppich
-    Länge: 0
-    Preis: 450 Euro
+    1-te Zeile:     1 0 0 0 0 3
+    2-te Zeile:     1 1 0 2 1 2
+    3-te Zeile:     0 1 0 0 0 1
+    Insgesamt:   2 2 0 2 1 6
 ```
